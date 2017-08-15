@@ -23,10 +23,10 @@ PHP script to tattle on Drupal websites
 ```http://localhost/drupaltattle_report.php?site=1```
 
 # Adjustments
-## Bundled Modules
+## Bundled Modules- Setting the Parent Module
 Some modules are bundled with others, such as various Views sub-modules.
 You can add an entry in the table drupal_modules_bundled so Drupal will know where to look.
-## Clearing the security flag for a module on a site
+## Clearing the Security Flag for a Module
 You can manually "clear" the security flag for a specific website and module by creating a row in drupal_site_module_okay.
 
 The "clear" is in effect for that site and that version only. Each subsequent time the tattle job runs, if the current module version for the site matches a record in the okay table, the status for that module on that site will be ok.
@@ -37,7 +37,7 @@ This means (right now) that if you run the tattle report and create an okay reco
 The script generates a new "job", just for tying together the data in various tables. 
 
 If you run into issues, first see what gets spit out on the command line. If that isn't useful, read the entries in job_error table in the logging database, using the job_id from your job.
-## Typical issues:
+## Typical issues
 ### Database user permissions
 If you're getting access denied from MySQL, check your permissions. The script attempts to verbosely log issues, but a connection error will be a fatal error and should crash the script.
 ### File i/o issues
