@@ -23,3 +23,5 @@ Typical issues:
 ## File i/o issues
 To get the Drupal core version, the script actually has to read the file [siteroot]/includes/bootstrap.inc for each Drupal 7 website. Make sure the scripts executes in a way that it has permission to read this file.
 
+# Todo
+Right now if no update info is found, modules are being marked as "unsupported". Maybe we need yet another column, since "unsupported" falls into the same bucket as security updates?
