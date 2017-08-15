@@ -31,7 +31,7 @@ You can manually "clear" the security flag for a specific website and module by 
 
 The "clear" is in effect for that site and that version only. Each subsequent time the tattle job runs, if the current module version for the site matches a record in the okay table, the status for that module on that site will be ok.
 
-This means (right now) that if you run the tattle report and create an okay record for a module/site combo, re-running the report will give the same status as the previous run. You'll have to run the tattle job again to get the cleared status, and run the report after that.
+This means that if you run the tattle report (drupaltattle_report.php) and then create an okay record for a module/site combo, re-running the report will give the same status as the previous run. You'll have to run the tattle job (drupaltattle.php) again to get the cleared status, and run the report job/script after that.
 
 # Troubleshooting
 The script generates a new "job", just for tying together the data in various tables. 
