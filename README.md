@@ -7,7 +7,7 @@ PHP script to tattle on Drupal websites
 1. Use the MySQL script to generate the logging database tables.
 2. Create a MySQL user account.
 3. Give the MySQL user r/w on all logging database tables, and r on all Drupal databases that you need to read.
-4. Run drupaltattle.php either by command line or in the browser. This will populate the relational db (no actual relations but tables with related keys).
+4. Run drupaltattle.php either by command line or in the browser. This will populate the relational db (no actual relationships but tables with related keys).
 5. Run drupaltattle_report.php by command line or in the browser. Parameters are "all", "site" and "site=n" where n is the drupal site id from the table drupal_site.
 
 # Executing the scripts from the command line
